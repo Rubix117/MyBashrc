@@ -152,9 +152,5 @@ if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
 
-# The following three lines have been added by UDB DB2.
-if [ -f /home/dave/sqllib/db2profile ]; then
-    . /home/dave/sqllib/db2profile
-fi
 
 alias gitLog="git log --oneline --graph --format='%C(yellow)%h %C(bold blue)%an %C(reset)%s %C(green)%GG%C(yellow)' "$@""
